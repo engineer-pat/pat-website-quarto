@@ -10,6 +10,7 @@ project:
 website:
   title: "Patrick Finnerty"
   site-url: https://patrickfinnerty.com
+  repo-url: https://github.com/engineer-pat/pat-website-quarto
   navbar:
     logo: assets/shieldlogo.png
     logo-alt: "Patrick Finnerty"

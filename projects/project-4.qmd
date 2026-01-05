@@ -1,0 +1,11 @@
+---
+title: "Charge Carrier Propagation Simulator"
+date: 2025-04-01
+description: "Simulates charge carrier propagation through a semiconductor material over time and space. Final project for ECE 576 Advanced Device Physics (Spring 2025)."
+image: "../assets/carrierProp.png"
+categories: [Coursework, Simulation]
+---
+
+2025 Spring: This app simulates charge carrier propagation through a semiconductor material over time and space. Final project for ECE 576 Advanced Device Physics.
+
+App: <https://pat-trinity-ralph-carrier-propagation-devicephysics-unm.streamlit.app/>

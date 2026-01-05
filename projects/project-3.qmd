@@ -8,4 +8,4 @@ categories: [Web]
 
 This site is built with Quarto and hosted at <https://patrickfinnerty.com>.
 
-Repository: 🚧 coming soon (not pushed yet)
+Repository: https://github.com/engineer-pat/pat-website-quarto
