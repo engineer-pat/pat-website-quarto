@@ -27,7 +27,7 @@ listing:
 ::: {.profile-text}
 # Patrick Finnerty
 
-Ph.D. student in Electrical Engineering at the University of New Mexico researching radiation-induced effects in wide bandgap optoelectronics. I work across III-V MOCVD growth, device design/fabrication, and electro-optical characterization, and when it's applicable, I use Python-based automation across these areas. 
+Ph.D. student in Electrical Engineering at the University of New Mexico researching radiation-induced effects in wide bandgap optoelectronics. I work across III-V MOCVD growth, device design/fabrication, and electro-optical characterization. I also use Python to automate tasks across these areas, including instrument control and data analysis.
 
 I like salsa/bachata dancing and long walks with my dog!
 :::
