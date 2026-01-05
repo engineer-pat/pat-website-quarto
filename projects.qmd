@@ -1,0 +1,12 @@
+---
+title: "Projects"
+listing:
+  contents: projects
+  type: grid
+  sort: "date desc"
+  fields: [image, title, description]
+  image-height: "160px"
+  categories: true
+  page-size: 12
+---
+

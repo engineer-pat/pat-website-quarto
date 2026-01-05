@@ -1,0 +1,8 @@
+---
+title: "Contact"
+---
+
+You can reach me at [patf@unm.edu](mailto:patf@unm.edu).
+
+- LinkedIn: <https://www.linkedin.com/in/patrick-finnerty/>
+- GitHub: <https://github.com/engineer-pat>

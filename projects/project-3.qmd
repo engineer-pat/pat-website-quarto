@@ -1,0 +1,11 @@
+---
+title: "Portfolio Website"
+date: 2026-01-05
+description: "This personal site (Quarto) for projects, writing, and contact. Repo and deployment docs coming soon."
+image: "../assets/shieldlogo.png"
+categories: [Web]
+---
+
+This site is built with Quarto and hosted at <https://patrickfinnerty.com>.
+
+Repository: 🚧 coming soon (not pushed yet)

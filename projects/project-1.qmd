@@ -1,0 +1,9 @@
+---
+title: "MOCVD Reactor Dashboard"
+date: 2026-01-04
+description: "Data dashboard for MOCVD reactor at UNM crystal growth. Facilitates post-run analysis for process optimization. Used Python, Streamlit, Plotly for visualization and Telegram API for alerts."
+image: "../assets/reactor-dashboard.png"
+categories: [Research, Dashboards]
+---
+
+Open the dashboard on Streamlit: <https://reactordashboardsample.streamlit.app/>

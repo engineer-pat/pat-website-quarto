@@ -1,0 +1,48 @@
+---
+title: "Home"
+listing:
+  id: home-projects
+  contents: projects
+  type: grid
+  sort: "date desc"
+  fields: [image, title, description]
+  image-height: "160px"
+  categories: true
+  page-size: 6
+---
+
+::: {.profile-hero}
+::: {.columns}
+
+::: {.column width="32%"}
+::: {.profile-links}
+[<i class="bi bi-linkedin" aria-hidden="true"></i> LinkedIn](https://www.linkedin.com/in/patrick-finnerty/){.btn .btn-primary target="_blank" rel="noopener"}
+[<i class="bi bi-github" aria-hidden="true"></i> GitHub](https://github.com/engineer-pat){.btn .btn-secondary target="_blank" rel="noopener"}
+:::
+
+![](assets/patWebsiteBio.jpg){.profile-image}
+:::
+
+::: {.column width="68%"}
+::: {.profile-text}
+# Patrick Finnerty
+
+Ph.D. student in Electrical Engineering at the University of New Mexico researching radiation-induced effects in wide bandgap optoelectronics. I work across III-V MOCVD growth, device design/fabrication, and electro-optical characterization, and when it's applicable, I use Python-based automation across these areas. 
+
+I like salsa/bachata dancing and long walks with my dog.
+:::
+:::
+
+:::
+:::
+
+## Highlights
+
+- Radiation-resistant wide bandgap optoelectronics (III-V/GaN): device design, fabrication, and electro-optical characterization
+- Automated MOCVD reactor telemetry: Python dashboard + Telegram alerts, reducing manual logging/analysis by ~90%
+- Probe-station control software for electro-optical testing (Python) — 🚧 repo coming soon
+
+## Projects
+
+::: {#home-projects}
+:::

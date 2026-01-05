@@ -1,0 +1,8 @@
+# Python dependencies for Quarto documents (e.g., Plotly figures)
+# Create a venv and install with: python -m pip install -r requirements.txt
+
+ipykernel
+jupyter
+numpy
+pandas
+plotly

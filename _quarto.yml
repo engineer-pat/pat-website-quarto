@@ -1,0 +1,40 @@
+project:
+  type: website
+  render:
+    - "*.qmd"
+    - "projects/**/*.qmd"
+    - "!about.qmd"
+  resources:
+    - CNAME
+
+website:
+  title: "Patrick Finnerty"
+  site-url: https://patrickfinnerty.com
+  navbar:
+    logo: assets/shieldlogo.png
+    logo-alt: "Patrick Finnerty"
+    left:
+      - href: index.qmd
+        text: Home
+      - href: projects.qmd
+        text: Projects
+      - href: contact.qmd
+        text: Contact
+    right:
+      - icon: github
+        href: https://github.com/engineer-pat
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://www.linkedin.com/in/patrick-finnerty/
+        aria-label: LinkedIn
+
+format:
+  html:
+    theme:
+      dark: cyborg
+      light: zephyr
+    css: styles.css
+    toc: true
+
+
+

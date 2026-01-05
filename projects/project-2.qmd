@@ -1,0 +1,11 @@
+---
+title: "Heme Binding Pockets"
+date: 2021-09-01
+description: "MS Thesis (2021): Analyzing structural features of hemoprotein binding pockets to identify relevant features for heme cofactor binding."
+image: "../assets/protein.jpg"
+categories: [Research]
+---
+
+MS Thesis (2021): Analyzing structural features of hemoprotein binding pockets to identify relevant features for heme cofactor binding.
+
+Project site: <https://engineer-pat.github.io/heme-binding/>
