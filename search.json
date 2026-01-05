@@ -1,24 +1,38 @@
 [
   {
-    "objectID": "projects/project-3.html",
-    "href": "projects/project-3.html",
-    "title": "Portfolio Website",
+    "objectID": "projects/project-4.html",
+    "href": "projects/project-4.html",
+    "title": "Charge Carrier Propagation Simulator",
     "section": "",
-    "text": "This site is built with Quarto and hosted at https://patrickfinnerty.com.\nRepository: 🚧 coming soon (not pushed yet)"
+    "text": "2025 Spring: This app simulates charge carrier propagation through a semiconductor material over time and space. Final project for ECE 576 Advanced Device Physics.\nApp: https://pat-trinity-ralph-carrier-propagation-devicephysics-unm.streamlit.app/"
   },
   {
-    "objectID": "projects/project-1.html",
-    "href": "projects/project-1.html",
-    "title": "MOCVD Reactor Dashboard",
+    "objectID": "projects/project-2.html",
+    "href": "projects/project-2.html",
+    "title": "Heme Binding Pockets",
     "section": "",
-    "text": "Open the dashboard on Streamlit: https://reactordashboardsample.streamlit.app/"
+    "text": "MS Thesis (2021): Analyzing structural features of hemoprotein binding pockets to identify relevant features for heme cofactor binding.\nProject site: https://engineer-pat.github.io/heme-binding/"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Portfolio Website\n\n\nThis personal site (Quarto) for projects, writing, and contact. Repo and deployment docs coming soon.\n\n\n\n\n\n\n\n\n\n\n\n\nMOCVD Reactor Dashboard\n\n\nData dashboard for MOCVD reactor at UNM crystal growth. Facilitates post-run analysis for process optimization. Used Python, Streamlit, Plotly for visualization and Telegram…\n\n\n\n\n\n\n\n\n\n\n\n\nCharge Carrier Propagation Simulator\n\n\nSimulates charge carrier propagation through a semiconductor material over time and space. Final project for ECE 576 Advanced Device Physics (Spring 2025).\n\n\n\n\n\n\n\n\n\n\n\n\nHeme Binding Pockets\n\n\nMS Thesis (2021): Analyzing structural features of hemoprotein binding pockets to identify relevant features for heme cofactor binding.\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "You can reach me at patf@unm.edu.\n\nLinkedIn: https://www.linkedin.com/in/patrick-finnerty/\nGitHub: https://github.com/engineer-pat"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "LinkedIn  GitHub\n\n\n\n\n\nPh.D. student in Electrical Engineering at the University of New Mexico researching radiation-induced effects in wide bandgap optoelectronics. I work across III-V MOCVD growth, device design/fabrication, and electro-optical characterization, and when it’s applicable, I use Python-based automation across these areas.\nI like salsa/bachata dancing and long walks with my dog!!"
+    "text": "LinkedIn  GitHub\n\n\n\n\n\nPh.D. student in Electrical Engineering at the University of New Mexico researching radiation-induced effects in wide bandgap optoelectronics. I work across III-V MOCVD growth, device design/fabrication, and electro-optical characterization, and when it’s applicable, I use Python-based automation across these areas.\nI like salsa/bachata dancing and long walks with my dog!"
   },
   {
     "objectID": "index.html#highlights",
@@ -32,27 +46,20 @@
     "href": "index.html#projects",
     "title": "Home",
     "section": "Projects",
-    "text": "Projects\n\n\n\n\n\n\n\n\n\n\nPortfolio Website\n\n\nThis personal site (Quarto) for projects, writing, and contact. Repo and deployment docs coming soon.\n\n\n\n\n\n\n\n\n\n\n\n\nMOCVD Reactor Dashboard\n\n\nData dashboard for MOCVD reactor at UNM crystal growth. Facilitates post-run analysis for process optimization. Used Python, Streamlit, Plotly for visualization and Telegram…\n\n\n\n\n\n\n\n\n\n\n\n\nHeme Binding Pockets\n\n\nMS Thesis (2021): Analyzing structural features of hemoprotein binding pockets to identify relevant features for heme cofactor binding.\n\n\n\n\n\nNo matching items"
+    "text": "Projects\n\n\n\n\n\n\n\n\n\n\nPortfolio Website\n\n\nThis personal site (Quarto) for projects, writing, and contact. Repo and deployment docs coming soon.\n\n\n\n\n\n\n\n\n\n\n\n\nMOCVD Reactor Dashboard\n\n\nData dashboard for MOCVD reactor at UNM crystal growth. Facilitates post-run analysis for process optimization. Used Python, Streamlit, Plotly for visualization and Telegram…\n\n\n\n\n\n\n\n\n\n\n\n\nCharge Carrier Propagation Simulator\n\n\nSimulates charge carrier propagation through a semiconductor material over time and space. Final project for ECE 576 Advanced Device Physics (Spring 2025).\n\n\n\n\n\n\n\n\n\n\n\n\nHeme Binding Pockets\n\n\nMS Thesis (2021): Analyzing structural features of hemoprotein binding pockets to identify relevant features for heme cofactor binding.\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
+    "objectID": "projects/project-1.html",
+    "href": "projects/project-1.html",
+    "title": "MOCVD Reactor Dashboard",
     "section": "",
-    "text": "You can reach me at patf@unm.edu.\n\nLinkedIn: https://www.linkedin.com/in/patrick-finnerty/\nGitHub: https://github.com/engineer-pat"
+    "text": "Open the dashboard on Streamlit: https://reactordashboardsample.streamlit.app/"
   },
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
+    "objectID": "projects/project-3.html",
+    "href": "projects/project-3.html",
+    "title": "Portfolio Website",
     "section": "",
-    "text": "Portfolio Website\n\n\nThis personal site (Quarto) for projects, writing, and contact. Repo and deployment docs coming soon.\n\n\n\n\n\n\n\n\n\n\n\n\nMOCVD Reactor Dashboard\n\n\nData dashboard for MOCVD reactor at UNM crystal growth. Facilitates post-run analysis for process optimization. Used Python, Streamlit, Plotly for visualization and Telegram…\n\n\n\n\n\n\n\n\n\n\n\n\nHeme Binding Pockets\n\n\nMS Thesis (2021): Analyzing structural features of hemoprotein binding pockets to identify relevant features for heme cofactor binding.\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/project-2.html",
-    "href": "projects/project-2.html",
-    "title": "Heme Binding Pockets",
-    "section": "",
-    "text": "MS Thesis (2021): Analyzing structural features of hemoprotein binding pockets to identify relevant features for heme cofactor binding.\nProject site: https://engineer-pat.github.io/heme-binding/"
+    "text": "This site is built with Quarto and hosted at https://patrickfinnerty.com.\nRepository: https://github.com/engineer-pat/pat-website-quarto"
   }
 ]
