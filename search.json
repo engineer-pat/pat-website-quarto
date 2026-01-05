@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "projects/project-3.html",
+    "href": "projects/project-3.html",
+    "title": "Portfolio Website",
+    "section": "",
+    "text": "This site is built with Quarto and hosted at https://patrickfinnerty.com.\nRepository: 🚧 coming soon (not pushed yet)"
+  },
+  {
+    "objectID": "projects/project-1.html",
+    "href": "projects/project-1.html",
+    "title": "MOCVD Reactor Dashboard",
+    "section": "",
+    "text": "Open the dashboard on Streamlit: https://reactordashboardsample.streamlit.app/"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "LinkedIn  GitHub\n\n\n\n\n\nPh.D. student in Electrical Engineering at the University of New Mexico researching radiation-induced effects in wide bandgap optoelectronics. I work across III-V MOCVD growth, device design/fabrication, and electro-optical characterization, and when it’s applicable, I use Python-based automation across these areas.\nI like salsa/bachata dancing and long walks with my dog."
+  },
+  {
+    "objectID": "index.html#highlights",
+    "href": "index.html#highlights",
+    "title": "Home",
+    "section": "Highlights",
+    "text": "Highlights\n\nRadiation-resistant wide bandgap optoelectronics (III-V/GaN): device design, fabrication, and electro-optical characterization\nAutomated MOCVD reactor telemetry: Python dashboard + Telegram alerts, reducing manual logging/analysis by ~90%\nProbe-station control software for electro-optical testing (Python) — 🚧 repo coming soon"
+  },
+  {
+    "objectID": "index.html#projects",
+    "href": "index.html#projects",
+    "title": "Home",
+    "section": "Projects",
+    "text": "Projects\n\n\n\n\n\n\n\n\n\n\nPortfolio Website\n\n\nThis personal site (Quarto) for projects, writing, and contact. Repo and deployment docs coming soon.\n\n\n\n\n\n\n\n\n\n\n\n\nMOCVD Reactor Dashboard\n\n\nData dashboard for MOCVD reactor at UNM crystal growth. Facilitates post-run analysis for process optimization. Used Python, Streamlit, Plotly for visualization and Telegram…\n\n\n\n\n\n\n\n\n\n\n\n\nHeme Binding Pockets\n\n\nMS Thesis (2021): Analyzing structural features of hemoprotein binding pockets to identify relevant features for heme cofactor binding.\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "You can reach me at patf@unm.edu.\n\nLinkedIn: https://www.linkedin.com/in/patrick-finnerty/\nGitHub: https://github.com/engineer-pat"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Portfolio Website\n\n\nThis personal site (Quarto) for projects, writing, and contact. Repo and deployment docs coming soon.\n\n\n\n\n\n\n\n\n\n\n\n\nMOCVD Reactor Dashboard\n\n\nData dashboard for MOCVD reactor at UNM crystal growth. Facilitates post-run analysis for process optimization. Used Python, Streamlit, Plotly for visualization and Telegram…\n\n\n\n\n\n\n\n\n\n\n\n\nHeme Binding Pockets\n\n\nMS Thesis (2021): Analyzing structural features of hemoprotein binding pockets to identify relevant features for heme cofactor binding.\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/project-2.html",
+    "href": "projects/project-2.html",
+    "title": "Heme Binding Pockets",
+    "section": "",
+    "text": "MS Thesis (2021): Analyzing structural features of hemoprotein binding pockets to identify relevant features for heme cofactor binding.\nProject site: https://engineer-pat.github.io/heme-binding/"
+  }
+]
