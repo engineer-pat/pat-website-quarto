@@ -1,0 +1,41 @@
+{
+  "source_file": "data_archive\\test_neg5_to_pos5_sweep\\sweep_neg5_to_pos5.csv",
+  "procedure_type": "voltage_sweep",
+  "generated_at": "2026-02-06T01:02:13.355632",
+  "metadata": {
+    "Voltage Start": -5.0,
+    "Voltage Stop": 5.0,
+    "Bidirectional": true,
+    "Device ID": "Diode_Q3Q1_Test"
+  },
+  "summary": {
+    "total_points": 200,
+    "valid_points": 200,
+    "setpoint_min": -5.0,
+    "setpoint_max": 5.0,
+    "measured_min": -1.0979885332725431e-09,
+    "measured_max": 0.0111993564946506,
+    "resistance_mean": 1223677308.1348884,
+    "resistance_std": 1584639122.4660556,
+    "resistance_min": -137897172.83015835,
+    "resistance_max": 4978823796.349339,
+    "power_max": 0.0548432897456643,
+    "power_mean": 0.012642735714048059,
+    "outbound_points": 100,
+    "return_points": 100,
+    "device_id": "Diode_Q3Q1_Test",
+    "measurement_mode": "2p"
+  },
+  "hysteresis": {
+    "hysteresis_available": true,
+    "max_delta": 0.0058103879875743,
+    "mean_delta": 0.00031884525332420677,
+    "rms_delta": 0.000832229685555318,
+    "max_delta_at_setpoint": 0.6000000000000005
+  },
+  "optical_summary": null,
+  "figures": [
+    "iv_curve",
+    "resistance"
+  ]
+}

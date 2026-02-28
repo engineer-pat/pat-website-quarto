@@ -1,0 +1,7 @@
+---
+title: "Probe Station Auto-Analysis Report"
+toc: false
+page-layout: full
+---
+
+<iframe src="assets/from_probestation/analysis_v2/report.html" width="100%" height="1200px" style="border: none;"></iframe>

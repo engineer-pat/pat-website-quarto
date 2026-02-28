@@ -20,7 +20,7 @@ listing:
 [<i class="bi bi-github" aria-hidden="true"></i> GitHub](https://github.com/engineer-pat){.btn .btn-secondary target="_blank" rel="noopener"}
 :::
 
-![](assets/patWebsiteBio.jpg){.profile-image}
+![](assets/patWebsiteBio1.jpg){.profile-image}
 :::
 
 ::: {.column width="68%"}

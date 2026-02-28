@@ -1,0 +1,180 @@
+---
+title: "Sweep Measurement Report"
+date: today
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    embed-resources: true
+    theme: cosmo
+    code-fold: true
+---
+
+```{python}
+#| echo: false
+#| warning: false
+import json
+from pathlib import Path
+
+# Load summary from sibling file
+summary_path = Path("summary.json")
+if summary_path.exists():
+    with open(summary_path) as f:
+        data = json.load(f)
+else:
+    data = {"metadata": {}, "summary": {}, "hysteresis": {}}
+
+metadata = data.get("metadata", {})
+summary = data.get("summary", {})
+
+# Extract key identifiers
+device_id = metadata.get("Device ID", summary.get("device_id", "Unknown"))
+run_label = metadata.get("Run Label", "")
+mode = metadata.get("Mode", summary.get("measurement_mode", ""))
+```
+
+## `{python} device_id` {.unnumbered}
+
+```{python}
+#| echo: false
+from IPython.display import Markdown
+
+# Build header info card with critical params only
+critical_items = []
+
+if run_label:
+    critical_items.append(f"**Run:** {run_label}")
+if mode:
+    critical_items.append(f"**Mode:** {mode}")
+
+# Sweep range
+v_start = metadata.get("Voltage Start", metadata.get("Current Start"))
+v_stop = metadata.get("Voltage Stop", metadata.get("Current Stop"))
+if v_start is not None and v_stop is not None:
+    unit = "V" if "Voltage Start" in metadata else "A"
+    critical_items.append(f"**Sweep:** {v_start} → {v_stop} {unit}")
+
+bidir = metadata.get("Bidirectional")
+if bidir is not None:
+    critical_items.append(f"**Bidirectional:** {'Yes' if bidir else 'No'}")
+
+# Total points
+pts = summary.get("total_points")
+if pts:
+    critical_items.append(f"**Points:** {pts}")
+
+if critical_items:
+    display(Markdown(" · ".join(critical_items)))
+```
+
+---
+
+## I-V Characteristic
+
+```{python}
+#| echo: false
+from IPython.display import HTML
+iv_path = Path("iv_curve.html")
+if iv_path.exists():
+    display(HTML(iv_path.read_text(encoding="utf-8")))
+else:
+    display(Markdown("*iv_curve.html not found.*"))
+```
+
+## Resistance
+
+```{python}
+#| echo: false
+from IPython.display import HTML
+res_path = Path("resistance.html")
+if res_path.exists():
+    display(HTML(res_path.read_text(encoding="utf-8")))
+else:
+    display(Markdown("*resistance.html not found.*"))
+```
+
+## Hysteresis
+
+```{python}
+#| echo: false
+hysteresis = data.get("hysteresis", {})
+if hysteresis.get("hysteresis_available"):
+    if hysteresis.get("point_mismatch"):
+        display(Markdown(f"""
+::: {{.callout-warning}}
+Outbound and return sweeps have different point counts. 
+Detailed hysteresis analysis requires matched point counts.
+:::
+"""))
+    else:
+        lines = [
+            "| Metric | Value |",
+            "|:-------|------:|",
+            f"| Max Delta | {hysteresis.get('max_delta', 0):.4e} |",
+            f"| Mean Delta | {hysteresis.get('mean_delta', 0):.4e} |",
+            f"| RMS Delta | {hysteresis.get('rms_delta', 0):.4e} |",
+            f"| At Setpoint | {hysteresis.get('max_delta_at_setpoint', 0):.4g} |",
+        ]
+        display(Markdown("\n".join(lines)))
+else:
+    display(Markdown("*Hysteresis not available (unidirectional sweep).*"))
+```
+
+## Summary Statistics
+
+```{python}
+#| echo: false
+if summary:
+    # Key stats to show
+    key_stats = [
+        ("setpoint_min", "Setpoint Min"),
+        ("setpoint_max", "Setpoint Max"),
+        ("measured_min", "Measured Min"),
+        ("measured_max", "Measured Max"),
+        ("resistance_mean", "R Mean (Ω)"),
+        ("power_max", "Power Max (W)"),
+        ("outbound_points", "Outbound Pts"),
+        ("return_points", "Return Pts"),
+    ]
+    lines = ["| Metric | Value |", "|:-------|------:|"]
+    for key, label in key_stats:
+        if key in summary:
+            v = summary[key]
+            if isinstance(v, float):
+                if abs(v) < 1e-3 or abs(v) > 1e6:
+                    lines.append(f"| {label} | {v:.4e} |")
+                else:
+                    lines.append(f"| {label} | {v:.4g} |")
+            else:
+                lines.append(f"| {label} | {v} |")
+    display(Markdown("\n".join(lines)))
+else:
+    display(Markdown("*No summary statistics available.*"))
+```
+
+## All Parameters
+
+::: {.callout-note collapse="true"}
+## Expand to see all measurement parameters
+
+```{python}
+#| echo: false
+if metadata:
+    lines = ["| Parameter | Value |", "|:----------|------:|"]
+    for k, v in sorted(metadata.items()):
+        if isinstance(v, float):
+            lines.append(f"| {k} | {v:.6g} |")
+        else:
+            lines.append(f"| {k} | {v} |")
+    display(Markdown("\n".join(lines)))
+else:
+    display(Markdown("*No parameter metadata available.*"))
+```
+:::
+
+---
+
+::: {.text-muted .small}
+Source: `{python} Path(data.get("source_file", "N/A")).name` · Generated: `{python} data.get("generated_at", "N/A")[:19].replace("T", " ")`
+:::
+

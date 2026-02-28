@@ -4,8 +4,12 @@ project:
     - "*.qmd"
     - "projects/**/*.qmd"
     - "!about.qmd"
+    - "!assets/**"
   resources:
     - CNAME
+    - assets/from_probestation/analysis_v2/report.html
+    - assets/from_probestation/analysis_v2/iv_curve.html
+    - assets/from_probestation/analysis_v2/resistance.html
 
 website:
   title: "Patrick Finnerty"
