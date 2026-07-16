@@ -1,7 +1,16 @@
 [
   {
-    "listing": "/projects.html",
+    "listing": "/publications.html",
     "items": [
+      "/publications/acs-nano-four-axis-framework.html",
+      "/publications/thesis-hemoprotein-binding.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/publications/acs-nano-four-axis-framework.html",
+      "/publications/thesis-hemoprotein-binding.html",
       "/projects/project-3.html",
       "/projects/project-1.html",
       "/projects/project-4.html",
@@ -9,7 +18,7 @@
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/projects.html",
     "items": [
       "/projects/project-3.html",
       "/projects/project-1.html",

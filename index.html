@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Home – Patrick Finnerty</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -34,17 +37,16 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d42b789bfe4379c020f43340d7c5bf08.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-1546c9620deb40f872523e0e8c27d052.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-2a3365765cdc575279a0725d1a3029c0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-30f5bf2c13b31f57e9e1a7802354f30c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,6 +77,34 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-home-publications .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-description','listing-categories','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-home-publications'] = new List('listing-home-publications', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-home-projects .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -84,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-image','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -103,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
   </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -325,6 +355,10 @@ window.Quarto = {
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./publications.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./contact.html"> 
 <span class="menu-text">Contact</span></a>
   </li>  
@@ -357,11 +391,11 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#highlights" id="toc-highlights" class="nav-link active" data-scroll-target="#highlights">Highlights</a></li>
+  <li><a href="#publications" id="toc-publications" class="nav-link active" data-scroll-target="#publications">Publications</a></li>
   <li><a href="#projects" id="toc-projects" class="nav-link" data-scroll-target="#projects">Projects</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Q291cnNld29yaw==">Coursework <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGFzaGJvYXJkcw==">Dashboards <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVzZWFyY2g=">Research <span class="quarto-category-count">(2)</span></div><div class="category" data-category="U2ltdWxhdGlvbg==">Simulation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="V2Vi">Web <span class="quarto-category-count">(1)</span></div></div></div>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -389,7 +423,7 @@ window.Quarto = {
 <div class="columns">
 <div class="column" style="width:32%;">
 <div class="profile-links">
-<p><a href="https://www.linkedin.com/in/patrick-finnerty/" class="btn btn-primary" target="_blank" rel="noopener"><i class="bi bi-linkedin" aria-hidden="true"></i> LinkedIn</a> <a href="https://github.com/engineer-pat" class="btn btn-secondary" target="_blank" rel="noopener"><i class="bi bi-github" aria-hidden="true"></i> GitHub</a></p>
+<p><a href="https://www.linkedin.com/in/patrick-finnerty/" class="btn btn-primary" target="_blank" rel="noopener"><i class="bi bi-linkedin" aria-hidden="true"></i> LinkedIn</a> <a href="https://github.com/engineer-pat" class="btn btn-secondary" target="_blank" rel="noopener"><i class="bi bi-github" aria-hidden="true"></i> GitHub</a> <a href="https://orcid.org/0009-0003-4645-6732" class="btn btn-secondary" target="_blank" rel="noopener"><img src="assets/orcid.svg" class="orcid-icon" alt=""> ORCID</a></p>
 </div>
 <p><img src="assets/patWebsiteBio1.jpg" class="profile-image img-fluid"></p>
 </div><div class="column" style="width:68%;">
@@ -401,19 +435,66 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<section id="highlights" class="level2">
-<h2 class="anchored" data-anchor-id="highlights">Highlights</h2>
-<ul>
-<li>Radiation-resistant wide bandgap optoelectronics (III-V/GaN): device design, fabrication, and electro-optical characterization</li>
-<li>Automated MOCVD reactor telemetry: Python dashboard + Telegram alerts, reducing manual logging/analysis by ~90%</li>
-<li>Probe-station control software for electro-optical testing (Python) — 🚧 repo coming soon</li>
-</ul>
+<section id="publications" class="level2">
+<h2 class="anchored" data-anchor-id="publications">Publications</h2>
+<div id="listing-home-publications" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="UGVyc3BlY3RpdmUlMkNJbiUyMFByb2dyZXNz" data-listing-date-sort="1767225600000" data-listing-file-modified-sort="1784233316543" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="28">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/acs-nano-four-axis-framework.html" class="no-external">A Four-Axis Decision Framework for Inorganic Nanostructure Fabrication: From Design Requirements to Synthesis Strategy</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGVyc3BlY3RpdmU='); return false;">Perspective</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW4lMjBQcm9ncmVzcw=='); return false;">In Progress</div>
+
+</div>
+<div class="delink listing-description"><a href="./publications/acs-nano-four-axis-framework.html" class="no-external">
+<p>A Perspective proposing a four-axis decision framework that maps nanostructure design requirements onto appropriate synthesis strategies.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./publications/acs-nano-four-axis-framework.html" class="no-external">
+<div class="listing-date">
+Jan 1, 2026
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="VGhlc2lz" data-listing-date-sort="1630972800000" data-listing-file-modified-sort="1784233316543" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/thesis-hemoprotein-binding.html" class="no-external">Structural Analysis of Hemoprotein Binding Sites</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('VGhlc2lz'); return false;">Thesis</div>
+
+</div>
+<div class="delink listing-description"><a href="./publications/thesis-hemoprotein-binding.html" class="no-external">
+<p>Master’s thesis examining structural features of heme binding environments across different heme types to advance understanding of how hemoproteins bind these essential cofactors.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./publications/thesis-hemoprotein-binding.html" class="no-external">
+<div class="listing-date">
+Sep 7, 2021
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+<p><a href="./publications.html">See all publications →</a></p>
 </section>
 <section id="projects" class="level2">
 <h2 class="anchored" data-anchor-id="projects">Projects</h2>
 <div id="listing-home-projects" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="V2Vi" data-listing-date-sort="1767571200000" data-listing-file-modified-sort="1772242501693" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="11">
+<div class="g-col-1" data-index="0" data-categories="V2Vi" data-listing-date-sort="1767571200000" data-listing-file-modified-sort="1784233316543" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="11">
 <a href="./projects/project-3.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -429,7 +510,7 @@ Portfolio Website
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="UmVzZWFyY2glMkNEYXNoYm9hcmRz" data-listing-date-sort="1767484800000" data-listing-file-modified-sort="1772242501692" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="g-col-1" data-index="1" data-categories="UmVzZWFyY2glMkNEYXNoYm9hcmRz" data-listing-date-sort="1767484800000" data-listing-file-modified-sort="1784233316543" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
 <a href="./projects/project-1.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -445,7 +526,7 @@ MOCVD Reactor Dashboard
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="Q291cnNld29yayUyQ1NpbXVsYXRpb24=" data-listing-date-sort="1743465600000" data-listing-file-modified-sort="1772242501693" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="25">
+<div class="g-col-1" data-index="2" data-categories="Q291cnNld29yayUyQ1NpbXVsYXRpb24=" data-listing-date-sort="1743465600000" data-listing-file-modified-sort="1784233316543" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="25">
 <a href="./projects/project-4.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -461,7 +542,7 @@ Charge Carrier Propagation Simulator
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="UmVzZWFyY2g=" data-listing-date-sort="1630454400000" data-listing-file-modified-sort="1772242501693" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
+<div class="g-col-1" data-index="3" data-categories="UmVzZWFyY2g=" data-listing-date-sort="1630454400000" data-listing-file-modified-sort="1784233316543" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
 <a href="./projects/project-2.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -480,6 +561,7 @@ Heme Binding Pockets
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
+<p><a href="./projects.html">See all projects →</a></p>
 
 
 
