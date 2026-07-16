@@ -1,0 +1,11 @@
+---
+title: "Structural Analysis of Hemoprotein Binding Sites"
+date: 2021-09-07
+author: "Patrick Finnerty"
+description: "Master's thesis examining structural features of heme binding environments across different heme types to advance understanding of how hemoproteins bind these essential cofactors."
+categories: [Thesis]
+pub-status: "Master's Thesis"
+pub-venue: "Master's Thesis"
+---
+
+Read the full thesis: <https://engineer-pat.github.io/heme-binding/>

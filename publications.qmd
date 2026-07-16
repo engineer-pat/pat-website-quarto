@@ -1,0 +1,14 @@
+---
+title: "Publications"
+listing:
+  contents: publications
+  type: default
+  sort: "date desc"
+  fields: [title, description, categories, date]
+  categories: true
+  sort-ui: false
+  filter-ui: false
+---
+
+A running list of my research writing. See the full record on my
+[<img src="assets/orcid.svg" class="orcid-icon" alt=""> ORCID profile](https://orcid.org/0009-0003-4645-6732){target="_blank" rel="noopener"}.

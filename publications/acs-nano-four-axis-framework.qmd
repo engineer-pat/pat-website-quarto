@@ -1,0 +1,14 @@
+---
+title: "A Four-Axis Decision Framework for Inorganic Nanostructure Fabrication: From Design Requirements to Synthesis Strategy"
+date: 2026-01-01
+author: "Patrick Finnerty"
+description: "A Perspective proposing a four-axis decision framework that maps nanostructure design requirements onto appropriate synthesis strategies."
+categories: [Perspective, In Progress]
+pub-status: "In Preparation"
+pub-venue: "ACS Nano (Perspective)"
+---
+
+**Status:** In preparation — intended for submission to *ACS Nano* as a Perspective.
+
+A Perspective proposing a four-axis decision framework that connects inorganic
+nanostructure design requirements to appropriate synthesis strategies.

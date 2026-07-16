@@ -3,6 +3,7 @@ project:
   render:
     - "*.qmd"
     - "projects/**/*.qmd"
+    - "publications/**/*.qmd"
     - "!about.qmd"
     - "!assets/**"
   resources:
@@ -23,6 +24,8 @@ website:
         text: Home
       - href: projects.qmd
         text: Projects
+      - href: publications.qmd
+        text: Publications
       - href: contact.qmd
         text: Contact
     right:

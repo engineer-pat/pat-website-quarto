@@ -1,14 +1,23 @@
 ---
 title: "Home"
 listing:
-  id: home-projects
-  contents: projects
-  type: grid
-  sort: "date desc"
-  fields: [image, title, description]
-  image-height: "160px"
-  categories: true
-  page-size: 6
+  - id: home-publications
+    contents: publications
+    type: default
+    sort: "date desc"
+    fields: [title, description, categories, date]
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    page-size: 5
+  - id: home-projects
+    contents: projects
+    type: grid
+    sort: "date desc"
+    fields: [image, title, description]
+    image-height: "160px"
+    categories: true
+    page-size: 6
 ---
 
 ::: {.profile-hero}
@@ -18,6 +27,7 @@ listing:
 ::: {.profile-links}
 [<i class="bi bi-linkedin" aria-hidden="true"></i> LinkedIn](https://www.linkedin.com/in/patrick-finnerty/){.btn .btn-primary target="_blank" rel="noopener"}
 [<i class="bi bi-github" aria-hidden="true"></i> GitHub](https://github.com/engineer-pat){.btn .btn-secondary target="_blank" rel="noopener"}
+[<img src="assets/orcid.svg" class="orcid-icon" alt=""> ORCID](https://orcid.org/0009-0003-4645-6732){.btn .btn-secondary target="_blank" rel="noopener"}
 :::
 
 ![](assets/patWebsiteBio1.jpg){.profile-image}
@@ -36,13 +46,16 @@ I like salsa/bachata dancing and long walks with my dog!
 :::
 :::
 
-## Highlights
+## Publications
 
-- Radiation-resistant wide bandgap optoelectronics (III-V/GaN): device design, fabrication, and electro-optical characterization
-- Automated MOCVD reactor telemetry: Python dashboard + Telegram alerts, reducing manual logging/analysis by ~90%
-- Probe-station control software for electro-optical testing (Python) — 🚧 repo coming soon
+::: {#home-publications}
+:::
+
+[See all publications →](publications.qmd)
 
 ## Projects
 
 ::: {#home-projects}
 :::
+
+[See all projects →](projects.qmd)
